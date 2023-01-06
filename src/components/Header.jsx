@@ -38,19 +38,35 @@ const Header = () => {
           <DrawerHeader>DomainHUB</DrawerHeader>
           <DrawerBody>
             <VStack alignItems={'flex-start'}>
-              <Button variant={'ghost'} colorScheme={'purple'}>
+              <Button
+                onClick={onClose}
+                variant={'ghost'}
+                colorScheme={'purple'}
+              >
                 <Link to={'/'}>Home</Link>
               </Button>
 
-              <Button variant={'ghost'} colorScheme={'purple'}>
+              <Button
+                onClick={onClose}
+                variant={'ghost'}
+                colorScheme={'purple'}
+              >
                 <Link to={'/videos'}>Videos</Link>
               </Button>
 
-              <Button variant={'ghost'} colorScheme={'purple'}>
+              <Button
+                onClick={onClose}
+                variant={'ghost'}
+                colorScheme={'purple'}
+              >
                 <Link to={'/videos?category=free'}>Free Videos</Link>
               </Button>
 
-              <Button variant={'ghost'} colorScheme={'purple'}>
+              <Button
+                onClick={onClose}
+                variant={'ghost'}
+                colorScheme={'purple'}
+              >
                 <Link to={'/upload'}>Upload Videos</Link>
               </Button>
             </VStack>
@@ -60,13 +76,17 @@ const Header = () => {
               bottom={'10'}
               left={'0'}
               w={'full'}
-              justifyContent={'center'}
+              justifyContent={'space-evenly'}
             >
-              <Button colorScheme={'purple'}>
-                <Link>Log In</Link>
+              <Button onClick={onClose} colorScheme={'purple'}>
+                <Link to={'/login'}>Log In</Link>
               </Button>
-              <Button colorScheme={'purple'} variant={'outline'}>
-                <Link>Sign Up</Link>
+              <Button
+                colorScheme={'purple'}
+                onClick={onClose}
+                variant={'outline'}
+              >
+                <Link to={'/signup'}>Sign Up</Link>
               </Button>
             </HStack>
           </DrawerBody>
