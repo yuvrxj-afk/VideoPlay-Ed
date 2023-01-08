@@ -45,9 +45,28 @@ const Footer = () => {
           <Heading textAlign={'center'} textTransform={'uppercase'}>
             Domain.HUB
           </Heading>
-          <Text>All rights received</Text>
+          <Text>All Rights Reserved.</Text>
         </VStack>
-        <VStack w={'full'}></VStack>
+        <VStack w={'full'}>
+          <Heading size={'md'} textTransform={'none'}>
+            Social Media
+          </Heading>
+          <Button variant={'link'} colorScheme={'purple'}>
+            <a target={'blank'} href="https://www.youtube.com/">
+              Youtube
+            </a>
+          </Button>
+          <Button variant={'link'} colorScheme={'purple'}>
+            <a target={'blank'} href="https://www.linkedin.com/">
+              LinkedIn
+            </a>
+          </Button>
+          <Button variant={'link'} colorScheme={'purple'}>
+            <a target={'blank'} href="https://www.instagram.com/">
+              Instagram
+            </a>
+          </Button>
+        </VStack>
       </Stack>
     </Box>
   );
